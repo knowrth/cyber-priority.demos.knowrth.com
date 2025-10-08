@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber Priority | Cybersecurity Solutions</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/logo.png" type="image/png" />
+
+    <!-- Tailwind build output -->
+    <link rel="stylesheet" href="./styles/output.css" />
+
+    <!-- Meta description -->
+    <meta
+      name="description"
+      content="Cyber Priority — Leading cybersecurity solutions and consulting for a safer digital future."
+    />
+  </head>
+
+  <body class="font-sans">
+    <!-- ============================================================
+         HEADER
+         ============================================================ -->
+    <header class="shadow-soft">
+      <div class="container mx-auto flex justify-between items-center px-4 py-3">
+        <!-- Logo -->
+        <div class="flex items-center space-x-3">
+          <img
+            src="./assets/logo-icon.png"
+            alt="Cyber Priority Logo"
+            class="h-10 w-10 object-contain"
+          />
+          <span class="text-xl font-heading font-bold text-white"
+            >CYBER <span class="text-primary">PRIORITY</span></span
+          >
+        </div>
+
+        <!-- Navigation -->
+        <nav class="hidden md:flex space-x-6">
+          <a href="#home" class="hover:text-accent">Home</a>
+          <a href="#about" class="hover:text-accent">About Us</a>
+          <a href="#services" class="hover:text-accent">Services</a>
+          <a href="#careers" class="hover:text-accent">Careers</a>
+          <a href="#contact" class="hover:text-accent">Contact Us</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden flex flex-col space-y-1">
+          <span class="w-6 h-0.5 bg-white"></span>
+          <span class="w-6 h-0.5 bg-white"></span>
+          <span class="w-6 h-0.5 bg-white"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Dropdown -->
+      <div id="mobile-menu" class="hidden flex-col bg-surface md:hidden">
+        <a href="#home" class="px-4 py-2 hover:bg-primary/10">Home</a>
+        <a href="#about" class="px-4 py-2 hover:bg-primary/10">About Us</a>
+        <a href="#services" class="px-4 py-2 hover:bg-primary/10">Services</a>
+        <a href="#careers" class="px-4 py-2 hover:bg-primary/10">Careers</a>
+        <a href="#contact" class="px-4 py-2 hover:bg-primary/10">Contact Us</a>
+      </div>
+    </header>
+
+   <!-- ============================================================
+     HOME SECTION WITH CAROUSEL CONTROLS
+     ============================================================ -->
+<section id="home" class="relative h-[80vh] overflow-hidden bg-black">
+  <div class="carousel w-full h-full relative">
+    <!-- Slide 1 -->
+    <div class="carousel-slide absolute inset-0 opacity-100">
+      <img src="./assets/hero-1a.png"
+        alt="Identity & Access Management" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 flex flex-col items-center justify-center text-center bg-black/40">
+        <h1 class="text-4xl md:text-5xl font-heading text-white mb-4">Secure the Human Side of Your Enterprise.</h1>
+        <p class="text-lg text-accent">We streamline access with SailPoint, giving the right people the right access—on-premise or in the cloud.</p>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-slide absolute inset-0 opacity-0">
+      <img src="./assets/hero-2a.png"
+        alt="Privileged Access Management" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 flex flex-col items-center justify-center text-center bg-black/40">
+        <h1 class="text-4xl md:text-5xl font-heading text-white mb-4">The Keys to the Kingdom. Protected.</h1>
+        <p class="text-lg text-accent">Eliminate privileged access risks with CyberArk, neutralizing your most vulnerable entry points.</p>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-slide absolute inset-0 opacity-0">
+      <img src="./assets/hero-3a.png"
+        alt="Cloud & Hybrid Identity" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 flex flex-col items-center justify-center text-center bg-black/40">
+        <h1 class="text-4xl md:text-5xl font-heading text-white mb-4">Unify Identity. Conquer Complexity.</h1>
+        <p class="text-lg text-accent">From Okta single sign-on to Saviynt governance, we architect secure, seamless identity for your cloud and hybrid environments.</p>
+      </div>
+    </div>
+
+    <!-- Carousel Controls -->
+    <button id="prevSlide"
+      class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white rounded-full flex items-center justify-center"
+      style="width: var(--carousel-control-size); height: var(--carousel-control-size);">
+      &#10094;
+    </button>
+    <button id="nextSlide"
+      class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white rounded-full flex items-center justify-center"
+      style="width: var(--carousel-control-size); height: var(--carousel-control-size);">
+      &#10095;
+    </button>
+
+    <!-- Dots Navigation -->
+    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-3">
+      <button class="carousel-dot w-[var(--carousel-dot-size)] h-[var(--carousel-dot-size)] rounded-full bg-white/40"></button>
+      <button class="carousel-dot w-[var(--carousel-dot-size)] h-[var(--carousel-dot-size)] rounded-full bg-white/40"></button>
+      <button class="carousel-dot w-[var(--carousel-dot-size)] h-[var(--carousel-dot-size)] rounded-full bg-white/40"></button>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- ============================================================
+         ABOUT US
+         ============================================================ -->
+    <section id="about" class="container mx-auto text-center">
+      <h2 class="section-title justify-center">
+        <span>🛡️</span> About Us
+      </h2>
+      <p class="max-w-2xl mx-auto text-muted">
+      <strong>CyberPriority</strong> is a trusted leader in <strong>Identity and Access Management (IAM)</strong> solutions, 
+      headquartered in <strong>Hyderabad, India</strong>. Founded in <strong>2025</strong> by a team of certified IAM experts, 
+      we deliver <strong>world-class security and governance services</strong> to organizations across the globe.
+    </p>
+    <br>
+    <p class="max-w-2xl mx-auto text-muted">
+      Our team brings together <strong>4 certified IAM architects</strong>, <strong>6 senior IAM engineers</strong>, 
+      and a strong base of emerging talent — combining over <strong>15+ years of collective experience</strong> in designing, 
+      implementing, and optimizing IAM ecosystems. We’ve successfully partnered with clients in 
+      <strong>banking, healthcare, life sciences, retail, telecommunications,</strong> and <strong>education</strong>.
+    </p>
+    <br>
+    <p class="max-w-2xl mx-auto text-muted">
+      We specialize in deploying and managing <strong>enterprise-grade IAM and PAM platforms</strong>, including:
+    </p>
+    <ul class="max-w-2xl mx-auto text-muted">
+      <li><strong>SailPoint IdentityIQ</strong> (On-Prem) &amp; <strong>Identity Security Cloud (ISC)</strong></li>
+      <li><strong>CyberArk</strong> Privileged Access Management</li>
+      <li><strong>Okta</strong> &amp; <strong>Saviynt</strong> for hybrid and cloud environments</li>
+    </ul>
+    <br>
+    <blockquote class="max-w-2xl mx-auto text-muted">
+      “Your Identity, Our Priority. Your Access, Our Responsibility.”
+    </blockquote>
+    <br>
+    <p class="max-w-2xl mx-auto text-muted">
+      We are driven by a mission to <strong>secure the human side of digital transformation</strong> — delivering 
+      <strong>24/7 support</strong>, following <strong>global best practices</strong>, and ensuring 
+      <strong>resilient, compliant, and future-ready identity frameworks</strong>.  
+      Our goal is to become the <strong>most trusted IAM partner</strong> across the 
+      <strong>APAC region and beyond</strong>, empowering enterprises to thrive in a secure digital world.
+    </p>
+    </section>
+
+   <!-- ============================================================
+     SERVICES
+     ============================================================ -->
+<section id="services" class="container mx-auto">
+  <h2 class="section-title">
+    <span>💼</span> Our Services
+  </h2>
+
+  <div class="grid md:grid-cols-3 gap-6">
+    <!-- Service Card 1 -->
+    <div class="service-card flex flex-col overflow-hidden">
+      <!-- Image Header -->
+      <div class="h-48 w-full overflow-hidden">
+        <img
+          src="./assets/sailpoint-iq.png"
+          alt="SailPoint IdentityIQ"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <!-- Title + Description (moved from footer) -->
+      <div class="border-b border-border p-4">
+        <h3 class="text-lg font-semibold text-primary mb-1">
+          SailPoint IdentityIQ
+        </h3>
+        <p class="text-sm text-muted">
+          Our team has 15+ years of experience in IIQ implementations across banking, healthcare, retail, and telecom, ensuring compliance and scalability.
+        </p>
+      </div>
+
+      <!-- Card Content -->
+      <div class="flex-1 p-4 text-muted">
+        SailPoint IdentityIQ is an on-premises Identity Governance and Administration (IGA) platform designed for complex enterprise environments. It provides full lifecycle identity management, access certifications, policy enforcement, and compliance reporting.
+        <br /><br />
+        <strong>Our Capabilities:</strong><br />
+        • End-to-End IIQ Deployment: Installation, configuration, and environment setup for large-scale enterprises.<br />
+        • Access Governance: Implement Access Certifications, SoD (Segregation of Duties) policies, and audit-ready reporting.<br />
+        • Lifecycle Management: Automate provisioning/de-provisioning, role-based access control (RBAC), and self-service access requests.<br />
+        • Custom Development: Build custom workflows, rules, and connectors for complex integrations.<br />
+        • AI-Driven Governance: Enable Predictive Identity for anomaly detection and risk-based access decisions.
+      </div>
+    </div>
+
+    <!-- Service Card 2 -->
+    <div class="service-card flex flex-col overflow-hidden">
+      <div class="h-48 w-full overflow-hidden">
+        <img
+          src="./assets/sailpoint-isc.png"
+          alt="SailPoint Identity Security Cloud"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="border-b border-border p-4">
+        <h3 class="text-lg font-semibold text-primary mb-1">
+          SailPoint Identity Security Cloud
+        </h3>
+        <p class="text-sm text-muted">
+          We deliver fast, secure, and cost-effective ISC implementations, helping clients adopt Zero Trust and cloud governance best practices.
+        </p>
+      </div>
+      <div class="flex-1 p-4 text-muted">
+        SailPoint ISC (formerly IdentityNow) is a cloud-native IGA solution offering multi-tenant SaaS identity security with built-in AI and machine learning for automated governance.
+Our Capabilities:
+	• Cloud-First IAM Strategy: Rapid deployment with zero infrastructure overhead.
+	• Automated Provisioning: Role-based and attribute-based provisioning for cloud and hybrid environments.
+	• Access Certifications & Compliance: Continuous compliance monitoring and audit-ready reporting.
+	• Integration Expertise: Onboard SaaS apps, ERP systems, and cloud platforms using SailPoint’s extensive connector library.
+	• Custom Extensions: Build custom workflows and APIs for advanced use cases.
+      </div>
+    </div>
+
+    <!-- Service Card 3 -->
+    <div class="service-card flex flex-col overflow-hidden">
+      <div class="h-48 w-full overflow-hidden">
+        <img
+          src="./assets/cyberark-pam.png"
+          alt="CyberArk Privileged Access Management"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="border-b border-border p-4">
+        <h3 class="text-lg font-semibold text-primary mb-1">
+          CyberArk Privileged Access Management
+        </h3>
+        <p class="text-sm text-muted">
+          Our experts design secure PAM architectures aligned with CyberArk Blueprint and regulatory frameworks like PCI DSS, HIPAA, GDPR.
+        </p>
+      </div>
+      <div class="flex-1 p-4 text-muted">
+        CyberArk is the industry leader in Privileged Access Management, securing privileged accounts, credentials, and sessions across on-prem and cloud environments.
+Our Capabilities:
+	• Privileged Account Discovery: Identify and onboard all privileged accounts across IT, OT, and cloud.
+	• Vault Deployment: Implement CyberArk Digital Vault for secure credential storage.
+	• Session Management: Enable session recording, monitoring, and analytics for compliance.
+	• Least Privilege & JIT Access: Implement Zero Standing Privileges (ZSP) and Just-in-Time (JIT) access models.
+	• Integration with IAM & SIEM: Seamless integration with SailPoint, Okta, and SIEM tools for unified security.
+      </div>
+    </div>
+
+    <!-- Service Card 4 -->
+    <div class="service-card flex flex-col overflow-hidden">
+      <div class="h-48 w-full overflow-hidden">
+        <img
+          src="assets/okta-iam.png"
+          alt="Okta"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="border-b border-border p-4">
+        <h3 class="text-lg font-semibold text-primary mb-1">
+          Okta
+        </h3>
+        <p class="text-sm text-muted">
+          We deliver secure, scalable Okta solutions for enterprises adopting Zero Trust and cloud-first strategies.
+        </p>
+      </div>
+      <div class="flex-1 p-4 text-muted">
+        Okta is a cloud-based Identity and Access Management (IAM) platform offering Single Sign-On (SSO), Multi-Factor Authentication (MFA), and Lifecycle Management.
+Our Capabilities:
+	• SSO & MFA Deployment: Implement adaptive MFA and SSO for web, mobile, and SaaS apps.
+	• Universal Directory Integration: Connect Active Directory, LDAP, and cloud directories.
+	• Lifecycle Automation: Automate user onboarding/offboarding and access provisioning.
+	• API Access Management: Secure APIs with OAuth 2.0 and granular access policies.
+	• Custom Workflows: Build Okta Workflows for advanced automation and compliance.
+      </div>
+    </div>
+
+    <!-- Service Card 5 -->
+    <div class="service-card flex flex-col overflow-hidden">
+      <div class="h-48 w-full overflow-hidden">
+        <img
+          src="assets/saviynt.png"
+          alt="Saviynt"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="border-b border-border p-4">
+        <h3 class="text-lg font-semibold text-primary mb-1">
+          Saviynt
+        </h3>
+        <p class="text-sm text-muted">
+          We help enterprises modernize IAM programs, reduce onboarding time by up to 70%, and achieve regulatory compliance efficiently.
+        </p>
+      </div>
+      <div class="flex-1 p-4 text-muted">
+        Saviynt Enterprise Identity Cloud (EIC) is a cloud-native Identity Governance and Administration (IGA) platform with advanced risk analytics, SoD controls, and cloud PAM capabilities.
+Our Capabilities:
+	• IGA Deployment: Implement identity lifecycle management, access request workflows, and certifications.
+	• Application Access Governance: Configure SoD analysis, risk-based access controls, and audit reporting.
+	• Cloud PAM: Deploy Just-in-Time privileged access for critical applications.
+	• Integration Expertise: Connect ERP systems (SAP, Oracle), cloud apps, and ServiceNow for unified governance.
+	• Automation & Analytics: Leverage AI/ML-based risk scoring and policy-driven automation.
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- ============================================================
+         CAREERS
+         ============================================================ -->
+    <section id="careers" class="container mx-auto text-center">
+      <h2 class="section-title justify-center">
+        <span>👩‍💻</span> Careers
+      </h2>
+      <p class="max-w-2xl mx-auto text-muted mb-4">
+        At Cyber Priority, we believe in innovation, collaboration, and
+        empowerment. Join a team that’s shaping the future of cybersecurity.
+      </p>
+      <br>
+      <p class="max-w-2xl mx-auto text-muted mb-4">
+        Drop us an email at careers@cyprtech.com or follow us on LinkedIn to explore exciting career opportunities and stay updated on all job openings.
+      </p>
+      <a
+        href="mailto:careers@cyprtech.com"
+        class="btn inline-block mt-2"
+        >Send Resume</a
+      >
+    </section>
+
+    <!-- ============================================================
+         CONTACT US
+         ============================================================ -->
+    <section id="contact" class="container mx-auto text-center">
+      <h2 class="section-title justify-center">
+        <span>📞</span> Contact Us
+      </h2>
+
+      <div class="max-w-xl mx-auto">
+        <!-- <img
+          src="https://via.placeholder.com/600x300?text=Cyber+Priority+HQ"
+          alt="Contact Image"
+          class="mb-6 rounded"
+        /> -->
+        <p class="text-lg leading-relaxed mb-8">
+      We’d love to hear from you. Whether you’re looking for a trusted IAM partner or have questions about our services,
+      our team is here to help you every step of the way.
+    </p>
+    <br>
+        <h3 class="text-2xl font-semibold mb-4 text-indigo-700">Get in Touch</h3>
+        <ul class="space-y-3 text-lg">
+          <li>
+            <strong>Phone:</strong>
+            <div class="ml-4">
+              <p>+91 80195 14466</p>
+              <p>+91 80195 24466</p>
+            </div>
+          </li>
+          <li>
+            <strong>Email:</strong>
+            <div class="ml-4">
+              <p><a href="mailto:hr@cyprtech.com" class="text-indigo-600 hover:underline">hr@cyprtech.com</a></p>
+            </div>
+          </li>
+          <li>
+            <strong>Address:</strong>
+            <div class="ml-4">
+              <p>CyberPriority Pvt. Ltd.</p>
+              <p>Plot No. XX, Tech Park Name,</p>
+              <p>Madhapur, Hyderabad – 500081, Telangana, India</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer>
+      <p>© 2025 Cyber Priority. All rights reserved.</p>
+    </footer>
+
+    <!-- ============================================================
+         SCRIPT: Hamburger Menu + Carousel
+         ============================================================ -->
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

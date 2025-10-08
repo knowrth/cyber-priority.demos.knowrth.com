@@ -1,0 +1,106 @@
+/* ============================================================
+   CYBER PRIORITY THEME
+   Defines the color palette, typography, and base variables.
+   Can be imported into Tailwind or applied via :root variables.
+   ============================================================ */
+
+:root {
+  /* Color Palette */
+  --color-bg: #0b0c1a;          /* Deep navy background */
+  --color-surface: #14162b;     /* Slightly lighter surface color */
+  --color-primary: #00a8e8;     /* Vibrant tech blue (matches logo accent) */
+  --color-primary-dark: #007bbf;/* Darker variant for hover/focus */
+  --color-accent: #66d9ff;      /* Light accent blue for highlights */
+  --color-text: #f5f7fa;        /* Near-white text for readability */
+  --color-muted: #9aa0b2;       /* Muted text for secondary content */
+  --color-border: #1f2236;      /* Soft border for section separation */
+
+  /* Typography */
+  --font-primary: 'Inter', 'Roboto', 'Segoe UI', sans-serif;
+  --font-heading: 'Poppins', 'Inter', sans-serif;
+
+  /* Layout / Radius / Shadow */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+  /* Transition defaults */
+  --transition-fast: 0.2s ease-in-out;
+
+    /* Carousel Settings */
+  --carousel-interval: 5000ms; /* Duration between slides (configurable) */
+  --carousel-fade-duration: 800ms; /* Transition fade speed */
+  --carousel-control-size: 2.5rem; /* Arrow size */
+  --carousel-dot-size: 0.75rem; /* Navigation dot size */
+
+}
+
+/* ============================================================
+   GLOBAL BASE STYLES
+   ============================================================ */
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-primary);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-md);
+  transition: background-color var(--transition-fast);
+}
+
+button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+section {
+  padding: 4rem 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+header, footer {
+  background-color: var(--color-surface);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.875rem;
+  color: var(--color-muted);
+}
+
+img {
+  border-radius: var(--radius-sm);
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-slide {
+  transition: opacity var(--carousel-fade-duration) ease-in-out;
+}
+

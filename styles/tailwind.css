@@ -1,0 +1,72 @@
+/* ============================================================
+   CYBER PRIORITY — Tailwind Base Setup
+   ------------------------------------------------------------
+   This file initializes Tailwind and imports custom theme
+   variables from theme.css. Run your build command:
+   npx tailwindcss -i ./styles/tailwind.css -o ./styles/output.css --watch
+   ============================================================ */
+
+/* Import theme variables */
+@import "./theme.css";
+
+/* Tailwind layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   GLOBAL OVERRIDES & COMPONENT STYLES
+   ============================================================ */
+
+/* Base page styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-primary);
+  margin: 0;
+  padding: 0;
+}
+
+/* Header + Sticky Nav */
+header {
+  @apply sticky top-0 z-50 w-full bg-surface shadow-soft;
+}
+
+/* Navigation menu styling */
+nav a {
+  @apply text-text font-medium px-4 py-2 transition-colors;
+}
+
+nav a:hover {
+  color: var(--color-accent);
+}
+
+/* Section titles with icons */
+.section-title {
+  @apply flex items-center gap-2 text-2xl font-semibold mb-6;
+  color: var(--color-primary);
+}
+
+/* Buttons */
+.btn {
+  @apply inline-block bg-primary text-white font-medium px-6 py-2 rounded-md shadow-soft transition-colors;
+}
+
+.btn:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* Service cards */
+.service-card {
+  @apply bg-surface rounded-lg shadow-soft transition-transform hover:-translate-y-1 hover:shadow-lg;
+}
+
+
+/* Footer */
+footer {
+  @apply bg-surface text-muted text-center py-4 text-sm;
+}
