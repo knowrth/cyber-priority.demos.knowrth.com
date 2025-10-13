@@ -23,15 +23,15 @@
          HEADER
          ============================================================ -->
     <header class="shadow-soft">
-      <div class="container mx-auto flex justify-between items-center px-4 py-3">
+      <div class="container mx-auto flex justify-between items-center px-4 py-3" style="height: 64px;">
         <!-- Logo -->
         <div class="flex items-center space-x-3">
-          <a href="index.html" class="flex items-center gap-3 shrink-0 h-full">
+          <a href="index.html" class="flex items-center gap-3 shrink-0 h-full" >
             <img
               src="assets/header.svg"              
               alt="Cyber Priority Logo"
-              class="block h-10 w-full object-contain"
-              
+              class="block "
+              style="height: 64px;"
             />
           </a>
         </div>
@@ -93,16 +93,13 @@
     </header>
 
     <main>
-      <div class="hidden md:flex relative overflow-hidden mb-10 h-56 sm:h-64 lg:h-80" style="height:14rem; position:relative;">
+      <div class=" relative overflow-hidden mb-10 h-56 sm:h-64 lg:h-80" style="height:18rem; position:relative;">
         <img
-          src="./assets/hero-1a.png"
-          alt="Services banner"
+          src="./assets/aboutus.png"
+          alt="About Us banner"
           class="absolute inset-0 w-full h-full object-cover"
-          style="filter:grayscale(100%) contrast(1.1) brightness(0.9);"
         />
-        <!-- overlays (don’t block clicks) -->
-        <div class="absolute inset-0" style="background:rgba(0,0,0,0.05); pointer-events:none;"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" style="pointer-events:none;"></div>
+        
 
         <!-- heading: ABSOLUTE + BOTTOM-LEFT + above overlays -->
         <div class="absolute inset-0">
@@ -121,25 +118,13 @@
          ABOUT US
          ============================================================ -->
       <section id="about" class="container mx-auto ">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        <!-- Left Img Section -->
-
         
-          <div class="rounded-xl overflow-hidden shadow-lg">
-            <img
-              src="assets/hero-1a.png"
-              alt="About Us"
-              class="w-full h-auto object-cover"
-            />
-          </div>
-
-          <!-- Right Image Section -->
-          <div class="text-left mt-2" style="margin-left: 16px ;">
+          <div class="text-left" >
             <h2 class="section-title flex items-center gap-2 mb-4">
               <span>🛡️</span> About Us
             </h2>
 
-            <div class="max-w-xl space-y-6">
+            <div class=" space-y-6">
               <p class="text-lg leading-relaxed ">
                 <strong>CyberPriority</strong> is a trusted leader in <strong>Identity and Access Management (IAM)</strong> solutions, 
             headquartered in <strong>Hyderabad, India</strong>. Founded in <strong>2025</strong> by a team of certified IAM experts, 
@@ -179,7 +164,7 @@
           </div>
 
           
-        </div>
+        
       </section>
     </main>
 
