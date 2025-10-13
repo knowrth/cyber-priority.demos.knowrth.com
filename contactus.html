@@ -37,14 +37,35 @@
         </div>
 
         <!-- Navigation -->
-        <nav class="hidden md:flex space-x-6">
+        <nav class="hidden md:flex space-x-6 relative">
           <a href="index.html" class="hover:text-accent">Home</a>
           <a href="aboutUs.html" class="hover:text-accent">About Us</a>
-          <a href="#services" class="hover:text-accent">Services</a>
+
+          <!-- Services Dropdown with Click Toggle -->
+          
+            <div class="relative" style="margin-top: 8px;">
+              <a href="#" id="services-desktop-btn" class="hover:text-accent">Services</a>
+
+              <div
+                id="services-desktop-dropdown"
+                class="absolute left-0 mt-2 flex flex-col bg-surface shadow-lg rounded-md transform transition-all duration-300 z-50
+                      opacity-0 invisible -translate-y-2 pointer-events-none"
+                style="width: 200px;"
+              >
+                <a href="sailPointIdentityIQ.html" class="block px-8 py-2 hover:bg-primary/10 text-white" style="margin-top: 5px;">SailPoint IdentityIQ</a>
+                <a href="sailPointIdentitySecurityCloud.html" class="block px-8 py-2 hover:bg-primary/10 text-white">SailPoint Identity Security Cloud</a>
+                <a href="cyberArkPrivileged.html" class="block px-8 py-2 hover:bg-primary/10 text-white">CyberArk Privileged</a>
+                <a href="okta.html" class="block px-8 py-2 hover:bg-primary/10 text-white">Okta</a>
+                <a href="saviynt.html" class="block px-8 py-2 hover:bg-primary/10 text-white">Saviynt</a>
+              </div>
+            </div>
+
+
           <a href="careers.html" class="hover:text-accent">Careers</a>
-          <a href="contactus.html" class="hover:text-accent">Contact Us</a>
+          <a href="contactus.html" class="hover:text-accent is-active">Contact Us</a>
         </nav>
 
+        
         <!-- Mobile Menu Button -->
         <button id="menu-btn" class="md:hidden flex flex-col space-y-1">
           <span class="w-6 h-0.5 bg-white"></span>
@@ -54,12 +75,20 @@
       </div>
 
       <!-- Mobile Dropdown -->
-      <div id="mobile-menu" class="hidden flex-col bg-surface md:hidden">
-        <a href="index.html" class="px-4 py-2 hover:bg-primary/10">Home</a>
-        <a href="aboutUs.html" class="px-4 py-2 hover:bg-primary/10">About Us</a>
-        <a href="#services" class="px-4 py-2 hover:bg-primary/10">Services</a>
-        <a href="careers.html" class="px-4 py-2 hover:bg-primary/10">Careers</a>
-        <a href="contactus.html" class="px-4 py-2 hover:bg-primary/10">Contact Us</a>
+      <div id="mobile-menu" class="hidden md:hidden bg-surface flex flex-col w-full">
+        <a href="index.html" class="block px-4 py-2 hover:bg-primary/10 ">Home</a>
+        <a href="aboutUs.html" class="block px-4 py-2 hover:bg-primary/10 ">About Us</a>
+        <a href="#"
+            id="services-link" class="block px-4 py-2 hover:bg-primary/10">Services</a>
+            <div id="services-dropdown-menu" class="hidden bg-surface/90 flex flex-col ml-6 ">
+            <a href="sailPointIdentityIQ.html" class="block px-8 py-2 hover:bg-primary/10 text-white" style="margin-left: 24px;">SailPoint IdentityIQ</a>
+            <a href="sailPointIdentitySecurityCloud.html" class="block px-8 py-2 hover:bg-primary/10 text-white" style="margin-left: 24px;">SailPoint Identity Security Cloud</a>
+            <a href="cyberArkPrivileged.html" class="block px-8 py-2 hover:bg-primary/10 text-white" style="margin-left: 24px;">CyberArk Privileged</a>
+            <a href="okta.html" class="block px-8 py-2 hover:bg-primary/10 text-white" style="margin-left: 24px;">Okta</a>
+            <a href="saviynt.html" class="block px-8 py-2 hover:bg-primary/10 text-white" style="margin-left: 24px;">Saviynt</a>
+          </div>
+        <a href="careers.html" class="block px-4 py-2 hover:bg-primary/10">Careers</a>
+        <a href="contactus.html" class="block px-4 py-2 hover:bg-primary/10 is-active">Contact Us</a>
       </div>
     </header>
 
@@ -67,73 +96,86 @@
     <!-- ============================================================
          CONTACT US
          ============================================================ -->
-<div style="height:14rem;" class="relative  sm:h-56 lg:h-72  overflow-hidden mb-10">
-      <img
-        src="assets/hero-1a.png"
-        alt="Contact Us banner"
-        class="absolute inset-0 w-full h-full object-cover"/>
-      <div class="absolute inset-0 bg-gray-700/60 mix-blend-multiply"></div>
-       <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-      <div class="absolute inset-0 flex items-center justify-center text-center px-4">
-        <h2 class=" text-3xl brand-purple-text sm:text-2xl font-semibold drop-shadow">
-          Contact Us
-        </h2>
+    <main>
+      <div class="relative overflow-hidden mb-10 h-56 sm:h-64 lg:h-80" style="height:14rem; position:relative;">
+        <img
+          src="./assets/hero-1a.png"
+          alt="Services banner"
+          class="absolute inset-0 w-full h-full object-cover"
+          style="filter:grayscale(100%) contrast(1.1) brightness(0.9);"
+        />
+        <!-- overlays (don’t block clicks) -->
+        <div class="absolute inset-0" style="background:rgba(0,0,0,0.05); pointer-events:none;"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" style="pointer-events:none;"></div>
+
+        <!-- heading: ABSOLUTE + BOTTOM-LEFT + above overlays -->
+        <div class="absolute inset-0">
+          <div class="container mx-auto h-full px-4 sm:px-8 lg:px-16 relative">
+            <h2
+              class="text-white font-semibold drop-shadow leading-none"
+              style="position:absolute; z-index:10; bottom:0.75rem; left:0; margin:0; font-size:2.25rem; margin-left: 16px;"
+            >
+              Contact Us
+            </h2>
+          </div>
+        </div>
+
       </div>
-  </div>
 
-<section id="contact" class="container mx-auto">
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-    <div class="text-left md:text-left"> <!-- add text-left -->
-      <h2 class="section-title flex items-center gap-2 mb-4">
-        <span>📞</span> Contact Us
-      </h2>
+      <section id="contact" class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div class="text-left md:text-left"> <!-- add text-left -->
+            <h2 class="section-title flex items-center gap-2 mb-4">
+              <span>📞</span> Contact Us
+            </h2>
 
-      <div class="max-w-xl">
-        <p class="text-lg leading-relaxed mb-8">
-          We’d love to hear from you. Whether you’re looking for a trusted IAM partner or have questions about our services,
-          our team is here to help you every step of the way.
-        </p>
+            <div class="max-w-xl">
+              <p class="text-lg leading-relaxed mb-8">
+                We’d love to hear from you. Whether you’re looking for a trusted IAM partner or have questions about our services,
+                our team is here to help you every step of the way.
+              </p>
 
-        <h3 class="text-2xl font-semibold mb-4 text-indigo-700">Get in Touch</h3>
+              <h3 class="text-2xl font-semibold mb-4 text-indigo-700">Get in Touch</h3>
 
-        <ul class="space-y-3 text-lg">
-          <li>
-            <strong>Phone:</strong>
-            <div class="ml-4">
-              <p>+91 80195 14466</p>
-              <p>+91 80195 24466</p>
+              <ul class="space-y-3 text-lg">
+                <li>
+                  <strong>Phone:</strong>
+                  <div class="ml-4">
+                    <p>+91 80195 14466</p>
+                    <p>+91 80195 24466</p>
+                  </div>
+                </li>
+                <li>
+                  <strong>Email:</strong>
+                  <div class="ml-4">
+                    <p><a href="mailto:hr@cyprtech.com" class="text-indigo-600 hover:underline">hr@cyprtech.com</a></p>
+                  </div>
+                </li>
+                <li>
+                  <strong>Address:</strong>
+                  <div class="ml-4">
+                    <p>CyberPriority Techno Consulting Private Ltd,</p>
+                    <p>Plot No 47,SY no 228 & 229, Ramakrishna Nagar,</p>
+                    <p>Madinaguda, Hyderabad- 500049, Telangana, India</p>
+                  </div>
+                </li>
+              </ul>
             </div>
-          </li>
-          <li>
-            <strong>Email:</strong>
-            <div class="ml-4">
-              <p><a href="mailto:hr@cyprtech.com" class="text-indigo-600 hover:underline">hr@cyprtech.com</a></p>
-            </div>
-          </li>
-          <li>
-            <strong>Address:</strong>
-            <div class="ml-4">
-              <p>CyberPriority Techno Consulting Private Ltd,</p>
-              <p>Plot No 47,SY no 228 & 229, Ramakrishna Nagar,</p>
-              <p>Madinaguda, Hyderabad- 500049, Telangana, India</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
+          </div>
 
-    <div style="height:27rem;" class="w-full md:h-[24rem] rounded overflow-hidden shadow-md">
-      <iframe
-        class="w-full h-full"
-        src="https://www.google.com/maps?q=CyberPriority%20Techno%20Consulting%20Private%20Ltd,%20Plot%20No%2047,%20SY%20no%20228%20%26%20229,%20Ramakrishna%20Nagar,%20Madinaguda,%20Hyderabad-500049,%20Telangana,%20India&output=embed"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
-  </div>
-</section>
+          <div style="height:27rem;" class="w-full md:h-[24rem] rounded overflow-hidden shadow-md">
+            <iframe
+              class="w-full h-full"
+              src="https://www.google.com/maps?q=CyberPriority%20Techno%20Consulting%20Private%20Ltd,%20Plot%20No%2047,%20SY%20no%20228%20%26%20229,%20Ramakrishna%20Nagar,%20Madinaguda,%20Hyderabad-500049,%20Telangana,%20India&output=embed"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </main>
 
 
 
@@ -148,42 +190,42 @@
          FOOTER
          ============================================================ -->
     <footer>
-  <div class="max-w-[1600px] mx-auto px-4 md:px-6 lg:px-8 text-center space-y-4"> 
-    <!-- Increased space-y from 4 → 6 for more gap -->
+      <div class="max-w-[1600px] mx-auto px-4 md:px-6 lg:px-8 text-center space-y-4"> 
+        <!-- Increased space-y from 4 → 6 for more gap -->
 
-    <div class="flex items-center justify-center gap-6 mb-4">
-      <!-- Instagram -->
-      <a href="#" aria-label="Instagram" class="opacity-90 hover:opacity-100 transition" target="_blank" rel="noopener">
-        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a5.5 5.5 0 1 1 0 11.001A5.5 5.5 0 0 1 12 7.5zm0 2a3.5 3.5 0 1 0 0 7.001 3.5 3.5 0 0 0 0-7.001zM17.75 6.5a1.25 1.25 0 1 1 0 2.501 1.25 1.25 0 0 1 0-2.501z"/>
-        </svg>
-      </a>
+        <div class="flex items-center justify-center gap-6 mb-4">
+          <!-- Instagram -->
+          <a href="#" aria-label="Instagram" class="opacity-90 hover:opacity-100 transition" target="_blank" rel="noopener">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a5.5 5.5 0 1 1 0 11.001A5.5 5.5 0 0 1 12 7.5zm0 2a3.5 3.5 0 1 0 0 7.001 3.5 3.5 0 0 0 0-7.001zM17.75 6.5a1.25 1.25 0 1 1 0 2.501 1.25 1.25 0 0 1 0-2.501z"/>
+            </svg>
+          </a>
 
-      <!-- Twitter -->
-      <a href="#" aria-label="Twitter" class="opacity-90 hover:opacity-100 transition" target="_blank" rel="noopener">
-        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M3 3h4.6l5.2 7.2L18.8 3H22l-7.7 10.4L22 21h-4.6l-5.4-7.5L8.2 21H3l7.8-10.6L3 3z"/>
-        </svg>
-      </a>
+          <!-- Twitter -->
+          <a href="#" aria-label="Twitter" class="opacity-90 hover:opacity-100 transition" target="_blank" rel="noopener">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M3 3h4.6l5.2 7.2L18.8 3H22l-7.7 10.4L22 21h-4.6l-5.4-7.5L8.2 21H3l7.8-10.6L3 3z"/>
+            </svg>
+          </a>
 
-      <!-- Facebook -->
-      <a href="#" aria-label="Facebook" class="opacity-90 hover:opacity-100 transition" target="_blank" rel="noopener">
-        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M22 12.06C22 6.55 17.52 2 12 2S2 6.55 2 12.06c0 4.99 3.66 9.14 8.44 9.94v-7.03H8.4v-2.9h2.04V9.84c0-2.02 1.2-3.14 3.04-3.14.88 0 1.8.16 1.8.16v1.98h-1.01c-1 0-1.31.62-1.31 1.26v1.52h2.23l-.36 2.9h-1.87V22c4.78-.8 8.44-4.95 8.44-9.94z"/>
-        </svg>
-      </a>
+          <!-- Facebook -->
+          <a href="#" aria-label="Facebook" class="opacity-90 hover:opacity-100 transition" target="_blank" rel="noopener">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22 12.06C22 6.55 17.52 2 12 2S2 6.55 2 12.06c0 4.99 3.66 9.14 8.44 9.94v-7.03H8.4v-2.9h2.04V9.84c0-2.02 1.2-3.14 3.04-3.14.88 0 1.8.16 1.8.16v1.98h-1.01c-1 0-1.31.62-1.31 1.26v1.52h2.23l-.36 2.9h-1.87V22c4.78-.8 8.44-4.95 8.44-9.94z"/>
+            </svg>
+          </a>
 
-      <!-- LinkedIn -->
-      <a href="#" aria-label="LinkedIn" class="opacity-90 hover:opacity-100 transition" target="_blank" rel="noopener">
-        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.05c.53-.98 1.83-2.2 3.77-2.2 4.03 0 4.78 2.65 4.78 6.1V24h-4v-7.7c0-1.84-.03-4.2-2.56-4.2-2.56 0-2.95 2-2.95 4.07V24h-4V8z"/>
-        </svg>
-      </a>
-    </div>
+          <!-- LinkedIn -->
+          <a href="#" aria-label="LinkedIn" class="opacity-90 hover:opacity-100 transition" target="_blank" rel="noopener">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.05c.53-.98 1.83-2.2 3.77-2.2 4.03 0 4.78 2.65 4.78 6.1V24h-4v-7.7c0-1.84-.03-4.2-2.56-4.2-2.56 0-2.95 2-2.95 4.07V24h-4V8z"/>
+            </svg>
+          </a>
+        </div>
 
-    <p class="text-sm ">© 2025 Cyber Priority. All rights reserved.</p>
-  </div>
-</footer>
+        <p class="text-sm ">© 2025 Cyber Priority. All rights reserved.</p>
+      </div>
+    </footer>
 
 
     <!-- ============================================================
