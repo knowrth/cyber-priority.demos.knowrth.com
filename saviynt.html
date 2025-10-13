@@ -6,7 +6,7 @@
     <title>Cyber Priority | Cybersecurity Solutions</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="./assets/logo.png" type="image/png" />
+    <link rel="icon" href="./assets/512x512.png" type="image/png" />
 
     <!-- Tailwind build output -->
     <link rel="stylesheet" href="./styles/output.css" />
@@ -26,20 +26,20 @@
       <div class="container mx-auto flex justify-between items-center px-4 py-3">
         <!-- Logo -->
         <div class="flex items-center space-x-3">
-          <img
-            src="./assets/logo-icon.png"
-            alt="Cyber Priority Logo"
-            class="h-10 w-10 object-contain"
-          />
-          <span class="text-xl font-heading font-bold text-white"
-            >CYBER <span class="text-primary">PRIORITY</span></span
-          >
+          <a href="index.html" class="flex items-center gap-3 shrink-0 h-full">
+            <img
+              src="assets/header.svg"              
+              alt="Cyber Priority Logo"
+              class="block h-10 w-full object-contain"
+              
+            />
+          </a>
         </div>
 
         <!-- Navigation -->
         <nav class="hidden md:flex space-x-6 relative">
-          <a href="index.html" class="hover:text-accent">Home</a>
-          <a href="aboutUs.html" class="hover:text-accent">About Us</a>
+          <a href="index.html" class="hover:text-accent text-white">Home</a>
+          <a href="aboutUs.html" class="hover:text-accent text-white">About Us</a>
 
           <!-- Services Dropdown with Click Toggle -->
           
@@ -56,13 +56,13 @@
                 <a href="sailPointIdentitySecurityCloud.html" class="block px-8 py-2 hover:bg-primary/10 text-white">SailPoint Identity Security Cloud</a>
                 <a href="cyberArkPrivileged.html" class="block px-8 py-2 hover:bg-primary/10 text-white">CyberArk Privileged</a>
                 <a href="okta.html" class="block px-8 py-2 hover:bg-primary/10 text-white">Okta</a>
-                <a href="saviynt.html" class="block px-8 py-2 hover:bg-primary/10 text-white is-active">Saviynt</a>
+                <a href="saviynt.html" class="block px-8 py-2 hover:bg-primary/10  is-active">Saviynt</a>
               </div>
             </div>
 
 
-          <a href="careers.html" class="hover:text-accent">Careers</a>
-          <a href="contactus.html" class="hover:text-accent">Contact Us</a>
+          <a href="careers.html" class="hover:text-accent text-white">Careers</a>
+          <a href="contactus.html" class="hover:text-accent text-white">Contact Us</a>
         </nav>
 
 
@@ -78,78 +78,28 @@
 
       <!-- Mobile Dropdown -->
       <div id="mobile-menu" class="hidden md:hidden bg-surface flex flex-col w-full">
-        <a href="#home" class="block px-4 py-2 hover:bg-primary/10">Home</a>
-        <a href="aboutUs.html" class="block px-4 py-2 hover:bg-primary/10">About Us</a>
+        <a href="#home" class="block px-4 py-2 hover:bg-primary/10 text-white">Home</a>
+        <a href="aboutUs.html" class="block px-4 py-2 hover:bg-primary/10 text-white">About Us</a>
         <a href="#"
-            id="services-link" class="block px-4 py-2 hover:bg-primary/10 is-active">Services</a>
+            id="services-link" class="block px-4 py-2 hover:bg-primary/10 text-white">Services</a>
             <div id="services-dropdown-menu" class="hidden bg-surface/90 flex flex-col ml-6 ">
             <a href="sailPointIdentityIQ.html" class="block px-8 py-2 hover:bg-primary/10 text-white" style="margin-left: 24px;">SailPoint IdentityIQ</a>
             <a href="sailPointIdentitySecurityCloud.html" class="block px-8 py-2 hover:bg-primary/10 text-white" style="margin-left: 24px;">SailPoint Identity Security Cloud</a>
             <a href="cyberArkPrivileged.html" class="block px-8 py-2 hover:bg-primary/10 text-white" style="margin-left: 24px;">CyberArk Privileged</a>
             <a href="okta.html" class="block px-8 py-2 hover:bg-primary/10 text-white" style="margin-left: 24px;">Okta</a>
-            <a href="saviynt.html" class="block px-8 py-2 hover:bg-primary/10 text-white is-active" style="margin-left: 24px;">Saviynt</a>
+            <a href="saviynt.html" class="block px-8 py-2 hover:bg-primary/10  is-active" style="margin-left: 24px;">Saviynt</a>
           </div>
-        <a href="careers.html" class="block px-4 py-2 hover:bg-primary/10">Careers</a>
-        <a href="contactus.html" class="block px-4 py-2 hover:bg-primary/10">Contact Us</a>
+        <a href="careers.html" class="block px-4 py-2 hover:bg-primary/10 text-white">Careers</a>
+        <a href="contactus.html" class="block px-4 py-2 hover:bg-primary/10 text-white">Contact Us</a>
       </div>
     </header>
 
     <main class="flex-1">
-      <div class="relative overflow-hidden mb-10 h-56 sm:h-64 lg:h-80" style="height:14rem; position:relative;">
-        <img
-          src="./assets/hero-1a.png"
-          alt="Services banner"
-          class="absolute inset-0 w-full h-full object-cover"
-          style="filter:grayscale(100%) contrast(1.1) brightness(0.9);"
-        />
-        <!-- overlays (don’t block clicks) -->
-        <div class="absolute inset-0" style="background:rgba(0,0,0,0.05); pointer-events:none;"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" style="pointer-events:none;"></div>
-
-        <!-- heading: ABSOLUTE + BOTTOM-LEFT + above overlays -->
-        <div class="absolute inset-0">
-          <div class="container mx-auto h-full px-4 sm:px-8 lg:px-16 relative">
-            <h2
-              class="text-white font-semibold drop-shadow leading-none"
-              style="position:absolute; z-index:10; bottom:0.75rem; left:0; margin:0; font-size:2.25rem; margin-left: 16px;"
-            >
-              Services
-            </h2>
-          </div>
-        </div>
-
-      </div>
 
       <section id="services" class="container mx-auto py-12">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          <!-- Left Text Section -->
-          <div class="text-left">
-            <h2 class="section-title flex items-center gap-2 mb-4">
-              Saviynt
-            </h2>
-
-            <div class="max-w-xl space-y-6">
-              <p class="text-lg leading-relaxed ">
-                We help enterprises modernize IAM programs, reduce onboarding time by up to 70%, and achieve regulatory compliance efficiently.
-              </p>
-
-              <p class="text-lg leading-relaxed mt-2">
-                Saviynt Enterprise Identity Cloud (EIC) is a cloud-native Identity Governance and Administration (IGA) platform with advanced risk analytics, SoD controls, and cloud PAM capabilities.
-                  <ul class="text-lg leading-relaxed">
-                      Our Capabilities:
-        <li>• IGA Deployment: Implement identity lifecycle management, access request workflows, and certifications.</li>
-        <li>• Application Access Governance: Configure SoD analysis, risk-based access controls, and audit reporting.</li>
-        <li>• Cloud PAM: Deploy Just-in-Time privileged access for critical applications.</li>
-        <li>• Integration Expertise: Connect ERP systems (SAP, Oracle), cloud apps, and ServiceNow for unified governance.</li>
-        <li>• Automation & Analytics: Leverage AI/ML-based risk scoring and policy-driven automation.</li>
-                  </ul>
-              </p>
-
-              
-            </div>
-          </div>
-
-          <!-- Right Image Section -->
+          <!-- Left Img Section -->
+          
           <div class="rounded-xl overflow-hidden shadow-lg">
             <img
               src="assets/saviynt.png"
@@ -157,6 +107,38 @@
               class="w-full h-auto object-cover"
             />
           </div>
+
+          <!-- Right Text Section -->
+          <div class="text-left mt-2" style="margin-left: 16px ;">
+            <h2 class="section-title flex items-center gap-2 mb-4">
+              Saviynt
+            </h2>
+
+            <div class="max-w-xl space-y-6">
+              <p class="text-lg leading-relaxed ">
+                Saviynt Enterprise Identity Cloud (EIC) is a cloud-native Identity Governance and Administration (IGA) platform with advanced risk analytics, SoD controls, and cloud PAM capabilities.
+              </p>
+
+              <p class="text-lg leading-relaxed mt-2">
+                Our Capabilities:
+                  <ul class="text-lg leading-relaxed">
+                      
+        <li>• IGA Deployment: Implement identity lifecycle management, access request workflows, and certifications.</li>
+        <li>• Application Access Governance: Configure SoD analysis, risk-based access controls, and audit reporting.</li>
+        <li>• Cloud PAM: Deploy Just-in-Time privileged access for critical applications.</li>
+        <li>• Integration Expertise: Connect ERP systems (SAP, Oracle), cloud apps, and ServiceNow for unified governance.</li>
+        <li>• Automation & Analytics: Leverage AI/ML-based risk scoring and policy-driven automation.</li>
+                  </ul>
+              </p>
+              <p class="text-lg leading-relaxed mt-2 ">
+                We help enterprises modernize IAM programs, reduce onboarding time by up to 70%, and achieve regulatory compliance efficiently.
+              </p>
+
+              
+            </div>
+          </div>
+
+          
         </div>
       </section>
 

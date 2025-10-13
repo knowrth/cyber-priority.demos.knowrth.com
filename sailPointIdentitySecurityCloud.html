@@ -6,7 +6,7 @@
     <title>Cyber Priority | Cybersecurity Solutions</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="./assets/logo.png" type="image/png" />
+    <link rel="icon" href="./assets/512x512.png" type="image/png" />
 
     <!-- Tailwind build output -->
     <link rel="stylesheet" href="./styles/output.css" />
@@ -26,14 +26,14 @@
       <div class="container mx-auto flex justify-between items-center px-4 py-3">
         <!-- Logo -->
         <div class="flex items-center space-x-3">
-          <img
-            src="./assets/logo-icon.png"
-            alt="Cyber Priority Logo"
-            class="h-10 w-10 object-contain"
-          />
-          <span class="text-xl font-heading font-bold text-white"
-            >CYBER <span class="text-primary">PRIORITY</span></span
-          >
+           <a href="index.html" class="flex items-center gap-3 shrink-0 h-full">
+      <img
+        src="assets/header.svg"              
+        alt="Cyber Priority Logo"
+        class="block h-10 w-full object-contain"
+        
+      />
+    </a>
         </div>
 
         <!-- Navigation -->
@@ -53,7 +53,7 @@
                 style="width: 200px;"
               >
                 <a href="sailPointIdentityIQ.html" class="block px-8 py-2 hover:bg-primary/10 text-white" style="margin-top: 5px;">SailPoint IdentityIQ</a>
-                <a href="sailPointIdentitySecurityCloud.html" class="block px-8 py-2 hover:bg-primary/10 text-white is-active">SailPoint Identity Security Cloud</a>
+                <a href="sailPointIdentitySecurityCloud.html" class="block px-8 py-2 hover:bg-primary/10  is-active">SailPoint Identity Security Cloud</a>
                 <a href="cyberArkPrivileged.html" class="block px-8 py-2 hover:bg-primary/10 text-white ">CyberArk Privileged</a>
                 <a href="okta.html" class="block px-8 py-2 hover:bg-primary/10 text-white">Okta</a>
                 <a href="saviynt.html" class="block px-8 py-2 hover:bg-primary/10 text-white ">Saviynt</a>
@@ -61,7 +61,7 @@
             </div>
 
 
-          <a href="careers.html" class="hover:text-accent">Careers</a>
+          <a href="careers.html" class="hover:text-accent ">Careers</a>
           <a href="contactus.html" class="hover:text-accent">Contact Us</a>
         </nav>
 
@@ -78,65 +78,52 @@
 
       <!-- Mobile Dropdown -->
       <div id="mobile-menu" class="hidden md:hidden bg-surface flex flex-col w-full">
-        <a href="index.html" class="block px-4 py-2 hover:bg-primary/10">Home</a>
-        <a href="aboutUs.html" class="block px-4 py-2 hover:bg-primary/10">About Us</a>
+        <a href="index.html" class="block px-4 py-2 hover:bg-primary/10 text-white">Home</a>
+        <a href="aboutUs.html" class="block px-4 py-2 hover:bg-primary/10 text-white">About Us</a>
         <a href="#"
-            id="services-link" class="block px-4 py-2 hover:bg-primary/10 is-active">Services</a>
+            id="services-link" class="block px-4 py-2 hover:bg-primary/10 text-white">Services</a>
             <div id="services-dropdown-menu" class="hidden bg-surface/90 flex flex-col ml-6 ">
             <a href="sailPointIdentityIQ.html" class="block px-8 py-2 hover:bg-primary/10 text-white" style="margin-left: 24px;">SailPoint IdentityIQ</a>
-            <a href="sailPointIdentitySecurityCloud.html" class="block px-8 py-2 hover:bg-primary/10 text-white is-active" style="margin-left: 24px;">SailPoint Identity Security Cloud</a>
+            <a href="sailPointIdentitySecurityCloud.html" class="block px-8 py-2 hover:bg-primary/10  is-active" style="margin-left: 24px;">SailPoint Identity Security Cloud</a>
             <a href="cyberArkPrivileged.html" class="block px-8 py-2 hover:bg-primary/10 text-white " style="margin-left: 24px;">CyberArk Privileged</a>
             <a href="okta.html" class="block px-8 py-2 hover:bg-primary/10 text-white" style="margin-left: 24px;">Okta</a>
             <a href="saviynt.html" class="block px-8 py-2 hover:bg-primary/10 text-white " style="margin-left: 24px;">Saviynt</a>
           </div>
-        <a href="careers.html" class="block px-4 py-2 hover:bg-primary/10">Careers</a>
-        <a href="contactus.html" class="block px-4 py-2 hover:bg-primary/10">Contact Us</a>
+        <a href="careers.html" class="block px-4 py-2 hover:bg-primary/10 text-white">Careers</a>
+        <a href="contactus.html" class="block px-4 py-2 hover:bg-primary/10 text-white">Contact Us</a>
       </div>
     </header>
 
     <main>
-      <div class="relative overflow-hidden mb-10 h-56 sm:h-64 lg:h-80" style="height:14rem; position:relative;">
-        <img
-          src="./assets/hero-1a.png"
-          alt="Services banner"
-          class="absolute inset-0 w-full h-full object-cover"
-          style="filter:grayscale(100%) contrast(1.1) brightness(0.9);"
-        />
-        <!-- overlays (don’t block clicks) -->
-        <div class="absolute inset-0" style="background:rgba(0,0,0,0.05); pointer-events:none;"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" style="pointer-events:none;"></div>
-
-        <!-- heading: ABSOLUTE + BOTTOM-LEFT + above overlays -->
-        <div class="absolute inset-0">
-          <div class="container mx-auto h-full px-4 sm:px-8 lg:px-16 relative">
-            <h2
-              class="text-white font-semibold drop-shadow leading-none"
-              style="position:absolute; z-index:10; bottom:0.75rem; left:0; margin:0; font-size:2.25rem; margin-left: 16px;"
-            >
-              Services
-            </h2>
-          </div>
-        </div>
-
       </div>
 
       <section id="services" class="container mx-auto py-12">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          <!-- Left Text Section -->
-          <div class="text-left">
+          <!-- Left IMG Section -->
+          <div class="rounded-xl overflow-hidden shadow-lg ">
+            <img
+              src="assets/sailpoint-isc.png"
+              alt="SailPoint ISC"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+
+          <!-- Right Text Section -->
+
+          <div class="text-left mt-2" style="margin-left: 16px ;">
             <h2 class="section-title flex items-center gap-2 mb-4">
               SailPoint Identity Security Cloud
             </h2>
 
             <div class="max-w-xl space-y-6">
               <p class="text-lg leading-relaxed ">
-                We deliver fast, secure, and cost-effective ISC implementations, helping clients adopt Zero Trust and cloud governance best practices.
+                SailPoint ISC (formerly IdentityNow) is a cloud-native IGA solution offering multi-tenant SaaS identity security with built-in AI and machine learning for automated governance.
               </p>
 
               <p class="text-lg leading-relaxed mt-2">
-                  SailPoint ISC (formerly IdentityNow) is a cloud-native IGA solution offering multi-tenant SaaS identity security with built-in AI and machine learning for automated governance.
+                  Our Capabilities:
                   <ul class="text-lg leading-relaxed">
-                      Our Capabilities:
+                      
                       <li>• Cloud-First IAM Strategy: Rapid deployment with zero infrastructure overhead.</li>
                       <li>• UAutomated Provisioning: Role-based and attribute-based provisioning for cloud and hybrid environments.</li>
                       <li>• Access Certifications & Compliance: Continuous compliance monitoring and audit-ready reporting.</li>
@@ -145,18 +132,16 @@
                   </ul>
               </p>
 
+              <p class="text-lg leading-relaxed ">
+                We deliver fast, secure, and cost-effective ISC implementations, helping clients adopt Zero Trust and cloud governance best practices.
+              </p>
+
               
             </div>
           </div>
 
-          <!-- Right Image Section -->
-          <div class="rounded-xl overflow-hidden shadow-lg">
-            <img
-              src="assets/sailpoint-isc.png"
-              alt="SailPoint ISC"
-              class="w-full h-auto object-cover"
-            />
-          </div>
+          
+          
         </div>
       </section>
     </main>
