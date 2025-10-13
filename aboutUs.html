@@ -93,7 +93,7 @@
     </header>
 
     <main>
-      <div class="relative overflow-hidden mb-10 h-56 sm:h-64 lg:h-80" style="height:14rem; position:relative;">
+      <div class="hidden md:flex relative overflow-hidden mb-10 h-56 sm:h-64 lg:h-80" style="height:14rem; position:relative;">
         <img
           src="./assets/hero-1a.png"
           alt="Services banner"
@@ -122,8 +122,19 @@
          ============================================================ -->
       <section id="about" class="container mx-auto ">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        <!-- Left Text Section -->
-          <div class="text-left">
+        <!-- Left Img Section -->
+
+        
+          <div class="rounded-xl overflow-hidden shadow-lg">
+            <img
+              src="assets/hero-1a.png"
+              alt="About Us"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+
+          <!-- Right Image Section -->
+          <div class="text-left mt-2" style="margin-left: 16px ;">
             <h2 class="section-title flex items-center gap-2 mb-4">
               <span>🛡️</span> About Us
             </h2>
@@ -167,14 +178,7 @@
             </div>
           </div>
 
-          <!-- Right Image Section -->
-          <div class="rounded-xl overflow-hidden shadow-lg">
-            <img
-              src="assets/hero-1a.png"
-              alt="About Us"
-              class="w-full h-auto object-cover"
-            />
-          </div>
+          
         </div>
       </section>
     </main>

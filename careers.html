@@ -24,15 +24,14 @@
          ============================================================ -->
     <header class="shadow-soft">
       <div class="container mx-auto flex justify-between items-center px-4 py-3">
-    <div class="flex items-center space-x-3">
-          <a href="index.html" class="flex items-center gap-3 shrink-0 h-full">
-            <img
-              src="assets/header.svg"              
-              alt="Cyber Priority Logo"
-              class="block h-10 w-full object-contain"
-              
-            />
-          </a>
+        <div class="flex items-center ">
+          <a href="index.html" class="flex items-center gap-3 shrink-0">
+  <img
+    src="assets/side-logo.png"
+    alt="Cyber Priority Logo"
+    class="block h-10 w-full "  
+  />
+</a>
         </div>
 
     <!-- Desktop Nav -->
@@ -96,11 +95,11 @@
 
 
     <main>
-      <div class="relative overflow-hidden mb-10 h-56 sm:h-64 lg:h-80" style="height:18rem; position:relative;">
+      <div class="hidden md:flex relative overflow-hidden mb-10 h-56 sm:h-64 lg:h-80" style="height:18rem; position:relative;">
         <img
   src="./assets/carrerBanner1.jpg"
   alt="Services banner"
-  class="absolute inset-0 w-full h-full object-fit object-center"
+  class="absolute inset-0 w-full h-full object-cover"
   style="filter:grayscale(100%) contrast(1.1) brightness(0.9);"
 />
         <!-- overlays (don’t block clicks) -->
@@ -123,8 +122,17 @@
 
       <section id="careers" class="container mx-auto py-12">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <!-- Right Image Section -->
+          <div class="rounded-xl overflow-hidden shadow-lg">
+            <img
+              src="assets/career1.jpg"
+              alt="Careers"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+
           <!-- Left Text Section -->
-          <div class="text-left">
+          <div class="text-left mt-2" style="margin-left: 16px ;">
             <h2 class="section-title flex items-center gap-2 mb-4">
               <span>👩‍💻</span> Careers
             </h2>
@@ -153,14 +161,7 @@
             </div>
           </div>
 
-          <!-- Right Image Section -->
-          <div class="rounded-xl overflow-hidden shadow-lg">
-            <img
-              src="assets/career1.jpg"
-              alt="Careers"
-              class="w-full h-auto object-cover"
-            />
-          </div>
+          
         </div>
       </section>
     </main>
